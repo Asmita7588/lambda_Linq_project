@@ -39,5 +39,19 @@ namespace LambdaLinqProject
 
         }
 
+        //Find the longest string in a list of strings.
+        public void FindLongestStringInList()
+        {
+            List<string> stringList = new List<string> { "HelloIndia", "ironMan", "Am", "Java.com", "Asmita", "Ask.com" };
+
+            string findLongestStr = stringList.OrderByDescending(name => name.Length).FirstOrDefault();
+
+            Console.WriteLine("Longest String list  : ");
+
+                Console.WriteLine(findLongestStr);
+            
+
+        }
+
     }
 }
