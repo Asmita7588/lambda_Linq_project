@@ -11,6 +11,8 @@ namespace LambdaLinqProject
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty; 
         public int Salary { get; set; }
+
+        public string Department { get; set; } = string.Empty ;
     }
      class EmployeeList
      {
@@ -42,8 +44,40 @@ namespace LambdaLinqProject
             }
         }
 
-     }
+        public void AverageSalaryByDepartment()
+        {
+
+                 List<Employee> list1 = new List<Employee>
+                 {
+                     new Employee{Id = 1 , Name = "Asmita", Salary = 232536, Department = "IT"},
+                     new Employee{Id = 3 , Name = "Akash", Salary = 480000, Department = "Finance"},
+                     new Employee{Id = 4 , Name = "Sagar", Salary = 343000, Department = "HR"},
+                     new Employee{Id = 2 , Name = "Chetan", Salary = 847834738 , Department = "HR"},
+                     new Employee{Id = 5 , Name = "Aniket", Salary = 12415 , Department = "IT"},
+                     new Employee{Id = 7 , Name = "Pranay", Salary = 10010, Department = "Finance"},
+                     new Employee{Id = 6 , Name = "Pravin", Salary = 32652, Department = "IT"},
+                     new Employee{Id = 8 , Name = "Ankita", Salary = 432362, Department = "HR"}
+
+                 };
 
 
-    
+                  var avgSalaryByDep = list1.GroupBy(e => e.Department).
+                                        Select(group =>new
+                                        {
+                                           group.Key,
+                                           avgSalary = group.Average(e => e.Salary),
+                                        } );
+
+                  Console.WriteLine("Average salary by department:");
+                   foreach (var dept in avgSalaryByDep)
+                   {
+                           Console.WriteLine($"{dept.Key}: {dept.avgSalary:F2}");
+                   }
+        }
+
+
+    }
+
+
+
 }
