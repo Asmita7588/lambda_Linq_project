@@ -6,90 +6,120 @@ using Microsoft.VisualBasic;
 
 internal class Program
 {
-    private static void Main(string[] args)
+    public static void Main(string[] args)
     {
-        //find even num from list
-        FindEvenFromList findEven = new FindEvenFromList();
-        findEven.FindEven();
+        ////find even num from list
+        //FindEvenFromList findEven = new FindEvenFromList();
+        //findEven.FindEven();
 
-        //find String strats with a
-        FindStringStartsWithA stringStartsWithA = new FindStringStartsWithA();
-        stringStartsWithA.FindString();
+        ////find String strats with a
+        //FindStringStartsWithA stringStartsWithA = new FindStringStartsWithA();
+        //stringStartsWithA.FindString();
 
-        //Sort List Of IntergesIN Desc
-        SortListOfInt sortListOfInt = new SortListOfInt();
-        sortListOfInt.SortListOfIntergersInDesc();
+        ////Sort List Of IntergesIN Desc
+        //SortListOfInt sortListOfInt = new SortListOfInt();
+        //sortListOfInt.SortListOfIntergersInDesc();
 
-        //CheckList of int 
-        CheckListOfInt checkListOfInt = new CheckListOfInt();
-        checkListOfInt.CheckListOfIntergers();
+        ////CheckList of int 
+        //CheckListOfInt checkListOfInt = new CheckListOfInt();
+        //checkListOfInt.CheckListOfIntergers();
 
-        //check more that 5 char in list of str
-        CheckNo0fChar checkNo0FChar = new CheckNo0fChar();
-        checkNo0FChar.CheckNo0fCharInList();
+        ////check more that 5 char in list of str
+        //CheckNo0fChar checkNo0FChar = new CheckNo0fChar();
+        //checkNo0FChar.CheckNo0fCharInList();
 
-        //checkDistinct numbers
-        RetrieveDistinctInts retrieveDistinctInts = new RetrieveDistinctInts();
-        retrieveDistinctInts.FindDistinctListOfInts();
+        ////checkDistinct numbers
+        //RetrieveDistinctInts retrieveDistinctInts = new RetrieveDistinctInts();
+        //retrieveDistinctInts.FindDistinctListOfInts();
 
-        //find sum of Odd
-        CalculateSumOfNum num = new CalculateSumOfNum();
-        num.FindSumOfNum();
+        ////find sum of Odd
+        //CalculateSumOfNum num = new CalculateSumOfNum();
+        //num.FindSumOfNum();
 
-        //Find the maximum number in a list of integers.
-        num.FindMaxNum();
+        ////Find the maximum number in a list of integers.
+        //num.FindMaxNum();
 
-        // Create a list of squares of integers from an existing list.
-        num.CreateSquareList();
+        //// Create a list of squares of integers from an existing list.
+        //num.CreateSquareList();
 
-        //Filter a list of strings to only include those ending with ".com".
-        FindStringStartsWithA findStringStartsWithA = new FindStringStartsWithA();
-        findStringStartsWithA.FilterListOfStr();
+        ////Filter a list of strings to only include those ending with ".com".
+        //FindStringStartsWithA findStringStartsWithA = new FindStringStartsWithA();
+        //findStringStartsWithA.FilterListOfStr();
 
-        //Intermidiate
+        ////Intermidiate
 
-        //Group a list of strings by their first letter.
+        ////Group a list of strings by their first letter.
 
-        GroupStringsByFirstLetter firstLetter = new GroupStringsByFirstLetter();
-        firstLetter.GroupWordsByFirstLetter();
+        //GroupStringsByFirstLetter firstLetter = new GroupStringsByFirstLetter();
+        //firstLetter.GroupWordsByFirstLetter();
 
-        //Find the top 3 highest numbers in a list of integers
-        TopThreeHighestNum topThreeHighestNum = new TopThreeHighestNum();
-        topThreeHighestNum.TopThreeHighest();
-
-
-        //Retrieve all employees with a salary greater than $50,000 from an employee list.
-
-        EmployeeList employee = new EmployeeList();
-        employee.CheckEmployeeSalary();
-
-        //Check if all elements in a list of integers are positive.
-        CheckPositiveList list = new CheckPositiveList();
-        list.CheckPositiveInts();
-
-        //first number in a list that is divisible by 3 and 5
-        list.FindFirstNumDivisible();
-
-        //Combine two lists of integers into one list without duplicates.
-        list.CombineTwoListWithoutDuplicate();
+        ////Find the top 3 highest numbers in a list of integers
+        //TopThreeHighestNum topThreeHighestNum = new TopThreeHighestNum();
+        //topThreeHighestNum.TopThreeHighest();
 
 
-        //Extract names of students who scored more than 80 in a subject from a list of student objects.
-        GetStudentScore getStudent = new GetStudentScore();
-        getStudent.FindScore();
+        ////Retrieve all employees with a salary greater than $50,000 from an employee list.
 
-        //Find the longest string in a list of strings.
-        FindStringStartsWithA findStringStart = new FindStringStartsWithA();
-        findStringStart.FindLongestStringInList();
+        //EmployeeList employee = new EmployeeList();
+        //employee.CheckEmployeeSalary();
 
-        //Retrieve the names of products that are out of stock from a product list.
+        ////Check if all elements in a list of integers are positive.
+        //CheckPositiveList list = new CheckPositiveList();
+        //list.CheckPositiveInts();
 
-        ProductDetails productDetails = new ProductDetails();
-        productDetails.OutOfStockProduct();
+        ////first number in a list that is divisible by 3 and 5
+        //list.FindFirstNumDivisible();
 
-        //Calculate the average of a list of floating-point numbers.
-        TopThreeHighestNum topThreeHighest = new TopThreeHighestNum();
-        topThreeHighest.FindAverage();
+        ////Combine two lists of integers into one list without duplicates.
+        //list.CombineTwoListWithoutDuplicate();
+
+
+        ////Extract names of students who scored more than 80 in a subject from a list of student objects.
+        //GetStudentScore getStudent = new GetStudentScore();
+        //getStudent.FindScore();
+
+        ////Find the longest string in a list of strings.
+        //FindStringStartsWithA findStringStart = new FindStringStartsWithA();
+        //findStringStart.FindLongestStringInList();
+
+        ////Retrieve the names of products that are out of stock from a product list.
+
+        //ProductDetails productDetails = new ProductDetails();
+        //productDetails.OutOfStockProduct();
+
+        ////Calculate the average of a list of floating-point numbers.
+        //TopThreeHighestNum topThreeHighest = new TopThreeHighestNum();
+        //topThreeHighest.FindAverage();
+
+        ////Group employees by department and calculate the average salary for each department.
+
+        //EmployeeList employeeList = new EmployeeList();
+        //employeeList.AverageSalaryByDepartment();
+
+        ////Find the second highest number in a list of integers.
+        //SortListOfInt sortList = new SortListOfInt();
+        //sortList.FindSecondHighestInt();
+
+        ////Retrieve a list of customers who placed orders in the last 30 days from an order list.
+
+        //CusOrder order = new CusOrder();
+        //order.CustomerList();
+
+        ////Flatten a list of lists of integers into a single list.
+        //FalttenList falttenList = new FalttenList();
+        //falttenList.FlattenLists();
+
+        ////Filter out duplicate words in a sentence and return them as a list.
+        //FindDuplicateInSentence findDuplicateInSentence = new FindDuplicateInSentence();
+        //findDuplicateInSentence.RemoveDuplicateWordInSentance();
+
+        ////Find the most frequently occurring word in a list of strings.
+        //findDuplicateInSentence.MostFrequentWord();
+
+        CusOrder order = new CusOrder();
+        order.FindLargestOrders();
+
+
 
     }
 }
